@@ -17,30 +17,56 @@ eCommerceAction_option has 31 rows of data with unknown defination.
 QA Process:
 Describe your QA process and include the SQL queries used to execute it.
 
+## BELOW IS A EXAMPLE HOW I DID QA
+
 To ensure the totaltransctionrevenue data is accurate, I compared it with transactions cloum; they all have 81 rows. Therefore, I am more comfortable using this data to do calculations. 
 
 Query used: 
 
-Select totaltransactionrevenue, transactions
-from all_sessions
+SELECT
+	
+	totaltransactionrevenue, 
+	
+	transactions
+
+FROM all_sessions
+
 where totaltransactionrevenue is not null 
-		and transactions is not null
+		
+		AND transactions is not null
 
-Product quantity and product revenue each have 4 rows of data since revenue = quantity * price, so I run the following query to ensure the data is correct. That confirms that product quantity, revenue, and price are accurate data with rounding. However, Transaction revenue does not make sense, so I only use this column to make calculations with further information. 
+## Product quantity and product revenue each have 4 rows of data since revenue = quantity * price, so I run the following query to ensure the data is correct. That confirms that product quantity, revenue, and price are accurate data with rounding. However, Transaction revenue does not make sense, so I only use this column to make calculations with further information. 
 
-Select transactionrevenue, productquantity,productrevenue,productprice
-from all_sessions
-where transactionrevenue is not null 
-		and productquantity is not null 
-		and productrevenue is not null 
+Select 
+	transactionrevenue, 
+	
+	productquantity,
+	
+	productrevenue,
+	
+	productprice
+
+FROM all_sessions
+
+WHERE transactionrevenue is not null 
+		
+		AND productquantity is not null 
+		AND productrevenue is not null 
 
 the answer is following:
 
 "transactionrevenue"	"productquantity"	"productrevenue"	"productprice"
+
 169.97	                    1	                58.66	            55.99
+
 1015.48	                    50	                176.40	            3.50
+
 1005.50	                    1	                   60.37	            59.99
+
 200.00	                    1	                    120.00	            119.00
+
+
+## I used Excel along with PGadmin on QA. My goal is only to use SQL queries to do QA shortly when I am more comfortable with SQL.  
 
 
 
