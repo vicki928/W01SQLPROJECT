@@ -41,7 +41,7 @@ SELECT distinct fullVisitorId,channelGrouping,time,
 ORDER by visitid desc
 
 
-This is just one of the query i used to find duplicate data. I did one query for each column.
+## This is just one of the query i used to find duplicate data. I did one query for each column.
 
 
 SELECT   productSKU, count(*)
@@ -52,7 +52,7 @@ GROUP BY productSKU
 
 HAVING count(*) > 1
 
-UPDATE TABLE WITH MISMATCHING COUNTRY AND CITY
+## UPDATE TABLE WITH MISMATCHING COUNTRY AND CITY
 
 
 UPDATE all_sessions
