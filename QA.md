@@ -6,7 +6,7 @@ For example, on the all_sessions table, the totaltranscationreveune has 81 rows 
 
 On the time column, it does not have a unit; If the unit is provided, we can find more information to decide if the time has any effect on the purchase; for example, when customer visit in the morning, do they intend to make a purchase? Or the most purchases happen in the afternoon or evening time? 
 
-SessionQualityDim needs to be clarified. It has 1228 rows with different values but no clear definition of SessionQualityDim; therefore, this column could be more helpful in this table.
+SessionQualityDim needs to be clarified. It has 1228 rows with different values but no clear definition of SessionQualityDim; therefore, this column is not very helpful in this table.
 
 No clear defination on eCommerceAction_Type, eCommerceAction_step, and eCommerceAction_option.
 eCommerceAction_Type and eCommerceAction_step have full set up of data, unknown defination
