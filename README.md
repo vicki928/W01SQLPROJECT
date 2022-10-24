@@ -95,7 +95,7 @@ After running the queries, analyze the query results to make sure they make sens
 ## Challenges 
 This database does not give any clear definations, therefore, it makes some cloumns are not very useful. For example, if the unit is given for the time cloumn on the all_seesions table, it will help me to analysis the relationship/result better for the visitor pucharcahse behavior. 
 
-Aslo, some cloumns seems missing values. There are 81 rows on transcastions cloumns and only 9 transcation ids. In the real world, each transcation needs to have one unique transcationid.
+Also, some columns seem to need values added. There are 81 rows on transactions columns and only nine transaction ids. In the real world, each transaction needs to have one unique transaction id.
 
 
 
