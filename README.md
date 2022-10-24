@@ -20,36 +20,67 @@ I also corrected the missing matching data.
 
 
 fullVisitorId	14223 Unique rows , 794 rows(id) used twice or more
+
 channelGrouping	full data,  where all the visitor get the website link
+
 time	time the visitor visited the website *** NOT SURE ABOUT THE UNIT OF TIME** HH:MM??? NOT SURE
+
 country	Vistor's country, some unknow country,  correct country and city matching. 
+
 city	Vistor's city, some unkown city 
+
 totalTransactionRevenue	81 rows only 
+
 transactions	81 rows only 
+
 timeOnSite	9 rows only 
+
 pageviews	full data - this is the full list of page views 
+
 sessionQualityDim	has 1228 rows  with different values **NOT SURE MEANING***
+
 date	full data - vistor visiting site date
+
 visitId	14556 unique rows, 553 duplicates
+
 type	full data - TYPE:( PAGE 14942 ROWS; EVENT 192 ROWS
+
 productRefundAmount	no data - DEL. 
+
 productQuantity	only has 4 rows that have value , divide by 1,000,000 round 2
+
 productPrice	full data - this is the full list of product price, divide by 1,000,000 round 2
+
 productRevenue	only has 4 rows that have value  ,divide by 1,000,000 round 2
+
 productSKU	536 unique productsku,444 duppicates 
+
 v2ProductName	full data - this is the full list of product name
+
 v2ProductCategory	757 rows not set , This seems realted to pageTitle
+
 productVariant	40 rows only has data  (size, clour, single option only)
+
 currencyCode	change all to USD, it seems country and locaiton does not matter
+
 itemQuantity	no data - DEL. 
+
 itemRevenue	no data - DEL. 
+
 transactionRevenue	only has 4 rows that have value   
+
 transactionId	9 rows only 
+
 pageTitle	1 NULL,  This is title of the v2ProductCategory
+
 searchKeyword	no data - DEL. 
+
 pagePathLevel1	full data - this is the path of the page
+
 eCommerceAction_type	FULL DATA -  have different values,  ***NOT SURE MEANING*** 
+
 eCommerceAction_step	FULL DATA -  have different values,  ***NOT SURE MEANING*** 
+
 eCommerceAction_option	31 ROWS OF DATA - ***NOT SURE MEANING***
 
 To answer the questions, I analyze each question first to locate which data I need. 
