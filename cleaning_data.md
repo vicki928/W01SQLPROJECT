@@ -1,6 +1,8 @@
 ## What issues will you address by cleaning the data?
 
-On the all_sessions table. I wrote queries to find all the duplicate data, miss matching between countries and cities, and missing currency codes. Etc. The following table shows what I did for each column and the relationships between columns as labelled by different colours.
+On the all_sessions table. I wrote queries to find all the duplicate data, miss matching between countries and cities, and missing currency codes. Etc. The following table shows what I did for each column and the relationships between columns as labelled by different colours. (see all_session table chart)
+
+
 
 I deleted all the null columns on the table.
 
