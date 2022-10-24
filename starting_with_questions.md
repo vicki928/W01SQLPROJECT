@@ -7,12 +7,18 @@ Answer the following questions and provide the SQL queries used to find the answ
 **SQL Queries:**
 
 SELECT sum(totaltransactionrevenue) as total, 
+		
 		city, 
+		
 		country
+
 FROM all_sessions 
+		
 		where totaltransactionrevenue is not null and city != 'N/A'
-			group by city, country
-			order by total desc
+		
+		group by city, country
+		
+		order by total desc
 
 
 
@@ -64,10 +70,18 @@ FROM all_sessions
 
 SQL Queries:
 
-SELECT round (avg(totaltransactionrevenue/productprice),2) as avg_prod_ordered, city,country
+SELECT round (avg(totaltransactionrevenue/productprice),2) as avg_prod_ordered, 
+		
+		city,
+		
+		country
+
 From all_sessions
+	
 	where city !='N/A'AND city !='(not set)'
+	
 	GROUP BY city,country
+	
 	order by avg_prod_ordered asc
 
 
@@ -122,12 +136,18 @@ Answer:
 SQL Queries:
 
 SELECT count(*) as numOfProductPerCat, 
+		
 		v2productcategory, 
+		
 		city,
+		
 		country
 FROM all_sessions
+	
 	where city !='N/A'AND city !='(not set)'
+	
 	GROUP BY v2productcategory,country, city
+	
 	order by  Country desc, numOfProductPerCat desc, city desc
 
 
@@ -150,18 +170,29 @@ SQL Queries:
 Select distinct 
 
               all_sessions.v2productname, 
+				
 				all_sessions.country,
+				
 				all_sessions.city,
+				
 				round(sum (revenue/1000000), 2) as revenue
+
 From (
+	
 	SELECT DISTINCT *
+	
 	FROM analytics
+	
 	Where Revenue is NOT NULL
+	
 	) as alt
 	
 Join all_sessions 
+
 Using (fullvisitorid)
+
 GROUP BY v2productname,country,city
+
 Order by revenue desc 
 
 
@@ -201,11 +232,17 @@ Nest® Cam Indoor Security Camera - USA Mountain View 1753.31
 SQL Queries: 
 
 SELECT sum(totalTransactionRevenue) as rev , 
+		
 		city,
+		
 		country
+
 FROM all_sessions
+	
 	where city !='N/A'AND city !='(not set)'AND totalTransactionRevenue is not NULL
+	
 	GROUP BY city,country
+	
 	order by country desc, city desc
 
 
