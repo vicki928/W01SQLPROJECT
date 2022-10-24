@@ -35,7 +35,7 @@ where totaltransactionrevenue is not null
 		
 		AND transactions is not null
 
-## Product quantity and product revenue each have 4 rows of data since revenue = quantity * price, so I run the following query to ensure the data is correct. That confirms that product quantity, revenue, and price are accurate data with rounding. However, Transaction revenue does not make sense, so I only use this column to make calculations with further information. 
+Product quantity and product revenue each have 4 rows of data since revenue = quantity * price, so I run the following query to ensure the data is correct. That confirms that product quantity, revenue, and price are accurate data with rounding. However, Transaction revenue does not make sense, so I only use this column to make calculations with further information. 
 
 Select 
 	transactionrevenue, 
