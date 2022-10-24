@@ -5,9 +5,13 @@ SQL Queries:
 Below is just one of the quries i used to find the duplicat records. i used the similar query to find other duplicate records
 
 select count(distinct fullvisitorid), 
+        
         fullvisitorid
+        
         from all_sessions
+
 group by fullvisitorid
+
 having count(*)>1
 
 Answer: 
