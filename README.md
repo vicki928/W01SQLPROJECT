@@ -7,13 +7,17 @@ I had zero experience in coding before Bootcamp; my goal for this week's project
 ## Process
 
 Step 1: Create the tables as required in Pgadmin. Assigned data types for each column. Assigned Primary Keys.
+
 Step 2:  Review all the data in excel first to see what's on the table since I am more comfortable with excel. Find the relationships between each column. 
+
 Step 3: Use queries in Pgadmin to make data more readable; for example, make all the reveune in millions, add missing values based on the data histories, and correct the mismatch between countries and cities. 
+
 Step 4: deleted some columns that only have nulls; Use queries to show all the nulls comlums, deleted all the null columns to make database smaller, however bofore I delete the null columns, I made sure these columns were not valuable and would not affect the table after deleting it. 
 
-Step 4: Analysis the relationships between columns, and make sure the data is accurate by running queries.  
+Step 5: Analysis the relationships between columns, and make sure the data is accurate by running queries.  
 		ex:  revenue = quantity sold * price 
-Step 5: find all the duplicate and incorrect records by running queries and make sure to exclude the duplicate records when doing calculations. 
+
+Step 6: find all the duplicate and incorrect records by running queries and make sure to exclude the duplicate records when doing calculations. 
 I also corrected the missing matching data. 
 
 ## Results
@@ -96,7 +100,8 @@ Aslo, some cloumns seems missing values. There are 81 rows on transcastions clou
 
 
 ## Future Goals
-Overall, for this project, I feel VERY overwhelmed.
+Overall, for this project, I feel VERY overwhelmed and rewarding at the same time. i have learned a lot in one week.
+
 We had to use many different tools to finish this project; however, during the lecture and after-class activities, it only had some very brief introductions on these concepts; It was very challenging for someone like me who has zero experience in coding.
 
 If I had more time, I would review the whole week's lecture notes and in-class recordings before starting this assignment. That will help me to understand the material better for this project. 
